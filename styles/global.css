@@ -7,5 +7,47 @@
 }
 
 body {
+  background-color:rgb(146, 166, 184);
     
+}
+
+h1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color:#2E3D33
+}
+
+p {
+  font-size: 25px; 
+  font-family: monospace;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+.product-features {
+  font-family: cursive;
+  text-align: center;
+}
+
+.product-image {
+  height:20px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  color: rgb(158, 23, 23);
+  font-weight: bold;
+}
+
+form {
+  text-align: center;
 }
