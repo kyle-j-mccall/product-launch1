@@ -1,4 +1,4 @@
-/* font @import */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
   /* css variables with theme colors,
@@ -11,21 +11,23 @@ body {
   background-color:rgb(146, 166, 184);
   height: 100vh;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
   'header features'
-  'info link'
+  'image link'
   'image form'
+  'image announce'
     
 }
 }
 h1 {
   grid-area: header;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Lobster', cursive;;
   font-size: 50px;
   text-align: center;
-  color:#2E3D33
+  color:#2E3D33;
+  background-color: coral;
 }
 
 p {
@@ -37,7 +39,10 @@ p {
   text-align: center;
 }
 
-
+.announce-date {
+  grid-area: announce;
+  font-size: 15px;
+}
 
 
 
@@ -45,14 +50,17 @@ p {
   grid-area: features;
   font-family: cursive;
   text-align: center;
+  justify-self: center;
+  align-self: center;
+  background-color: coral;
 }
 
 .product-image {
   display: grid;
   grid-area:image;
   height:20%;
-  margin: 20px;
-  
+  max-width: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
 }
@@ -61,9 +69,19 @@ p {
   grid-area: link;
   color: rgb(158, 23, 23);
   font-weight: bold;
+  justify-self: center;
+  align-self: center;
 }
 
 form {
   grid-area: form;
   text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.image2 {
+  display: grid;
+  grid-area: image2;
+  
 }
