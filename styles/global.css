@@ -5,13 +5,23 @@
     names have to start with "--" */
   --color-1: #b9af9e;
 }
+@media (min-width: 900px){
 
 body {
   background-color:rgb(146, 166, 184);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  'header features'
+  'info link'
+  'image form'
     
 }
-
+}
 h1 {
+  grid-area: header;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
   text-align: center;
@@ -19,6 +29,7 @@ h1 {
 }
 
 p {
+  grid-area: info;
   font-size: 25px; 
   font-family: monospace;
   margin: 5px;
@@ -31,23 +42,28 @@ p {
 
 
 .product-features {
+  grid-area: features;
   font-family: cursive;
   text-align: center;
 }
 
 .product-image {
-  height:20px;
+  display: grid;
+  grid-area:image;
+  height:20%;
   margin: 20px;
-  display: flex;
+  
   align-items: center;
   justify-content: center;
 }
 
 .link {
+  grid-area: link;
   color: rgb(158, 23, 23);
   font-weight: bold;
 }
 
 form {
+  grid-area: form;
   text-align: center;
 }
